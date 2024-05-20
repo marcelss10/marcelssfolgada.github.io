@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Convite para Sair</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #convite {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+    #nao {
+        background-color: #4CAF50;
+        color: white;
+    }
+    #sim {
+        background-color: #f44336;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<div id="mensagem" class="mensagem">
+        <h1>Olá, Folgadinhaaa!</h1>
+        <p>Eu só queria dizer o quanto você é Folgada, porem vc ja sabe ne HAHAHAHA.</p>
+        <p>Para mostrar um pouco do meu sentimento, gostaria que você ouvisse essa música que me faz pensar em você:</p>
+        <a href="https://www.youtube.com/watch?v=lyHNzNMSZyw" target="_blank">Clique aqui para ouvir</a>
+    </div>
+
+<script>
+    document.getElementById('sim').onclick = function(event) {
+        var btn = event.target;
+        var x = Math.random() * 300 - 150; // Mover horizontalmente (-150 a 150 pixels)
+        var y = Math.random() * 300 - 150; // Mover verticalmente (-150 a 150 pixels)
+        btn.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+    };
+</script>
+</body>
+</html>
